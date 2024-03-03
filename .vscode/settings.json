@@ -1,0 +1,9 @@
+{
+    "cSpell.words": [
+        "Lambdatest"
+    ],
+    "liveServer.settings.port": 4000,
+    "liveServer.settings.mount": [
+        ["/", "src"]
+    ]
+}

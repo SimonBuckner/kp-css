@@ -1,0 +1,101 @@
+/* Basic CSS reset */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+a {
+    text-decoration-style: dashed;
+ }
+
+a:hover {
+    text-decoration-style:solid;
+}
+
+:root {
+    font-family: Bahnschrift, 'DIN Alternate', 'Franklin Gothic Medium', 'Nimbus Sans Narrow', sans-serif-condensed, sans-serif;
+    font-weight: normal;
+
+    /* Define our colors. */
+
+/* CSS HSL */
+--bg-color: hsla(37, 40%, 90%, 1);
+--pop-color: hsla(20, 62%, 47%, 1);
+--fg-color: hsla(180, 85%, 7%, 1);
+--midnight-green: hsla(182, 68%, 17%, 1);
+--yellow-green: hsla(78, 70%, 46%, 1);
+
+/* 
+$alabaster: hsla(37, 40%, 90%, 1);
+    $dark-green: hsla(180, 100%, 7%, 1);
+    $midnight-green: hsla(182, 68%, 17%, 1);
+    $yellow-green: hsla(78, 70%, 46%, 1);
+    $persimmon: hsla(20, 85%, 48%, 1); 
+*/
+}
+
+/* A couple of classes for use in debugging */
+.debug1 {
+    border: 3px solid darkred;
+}
+
+.debug2 {
+    border: 2px solid red;
+}
+
+.debug3 {
+    border: 1px solid lightcoral;
+}
+
+/* The meat and bones */
+
+.separator {
+    margin: 1em 0;
+}
+
+.container {
+    width: min(80%, 1100px);
+    margin: 0 auto;
+}
+
+.hero {
+    background-color: var(--pop-color);
+    color: var(--bg-color);
+}
+
+.hero__content {
+    text-align: center;
+    padding: 8em 8em;
+    a {
+        color: var(--bg-color);
+    }
+    h1 {
+        margin: 0;
+        font-size: 4rem;
+        text-transform: uppercase;
+    }
+    p {
+        margin: 0;
+        font-size: 1.75rem;
+    }
+    h1+p {
+        margin-top: 2em;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .hero__content {
+        padding: 1em;
+    }
+
+}

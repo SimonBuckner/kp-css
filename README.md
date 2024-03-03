@@ -16,13 +16,21 @@ and tools that help me out.
   - [The Primeagen](https://www.youtube.com/c/theprimeagen) for his excellent YouTube channel
   - [Prism](https://prismjs.com/) for their syntax highlighter
   - [Lambdatest](https://www.lambdatest.com/free-online-tools/html-escape) for the HTML escape tool
+  - [LogRocket](https://blog.logrocket.com/building-color-palette-css/) for the color system
+
+### TODO
+Track down the favicon generator I used.
+
 
 Layout of the site
 ------------------
 
-### Hero Text
+### [Hero Section - Text](https://simonbuckner.github.io/kp-css/)
 
-This demonstrates the relation between a vertical section of a page, a container
+The Hero section is a large attention grabbing section of a website used on the
+landing page. This allows the visitor to understand what your site is about.
+
+The hero section introduces some key concepts that are built upon later on. This demonstrates the relation between a vertical section of a page, a container
 for the content in that section and then the content itself. In this context,
 these elements are used for the following purposes.
 
