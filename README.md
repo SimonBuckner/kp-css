@@ -1,14 +1,17 @@
 kp-css
 ======
 
-Consolidation my learning from Kevin Powell's excellent (Conquering Responsive Layouts course|https://courses.kevinpowell.co/conquering-responsive-layouts)
+Consolidating my learning from Kevin Powell's excellent 
+(Conquering Responsive Layouts course|https://courses.kevinpowell.co/conquering-responsive-layouts)
 
 Layout of the site
 ------------------
 
 ### Hero Text
 
-This demonstrates the relation between a vertical section of a page, a container for the content in that section and then the content itself. In this context, these elements are used for the following purposes.
+This demonstrates the relation between a vertical section of a page, a container
+for the content in that section and then the content itself. In this context,
+these elements are used for the following purposes.
 
 - Section
     - Covers the width of the visible page
