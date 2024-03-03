@@ -1,3 +1,18 @@
+:root {
+    font-family: Bahnschrift, 'DIN Alternate', 'Franklin Gothic Medium', 'Nimbus Sans Narrow', sans-serif-condensed, sans-serif;
+    font-weight: normal;
+
+    /* Define our colors. */
+    --bg-color: hsla(37, 40%, 90%, 1);
+    --pop-color: hsla(20, 62%, 47%, 1);
+    --fg-color: hsla(180, 85%, 7%, 1);
+
+    /*  Not using these yet...
+    --midnight-green: hsla(182, 68%, 17%, 1);
+    --yellow-green: hsla(78, 70%, 46%, 1);
+    */ 
+}
+
 /* Basic CSS reset */
 *,
 *::before,
@@ -11,37 +26,18 @@ img {
 
 body {
     margin: 0;
+    color: var(--fg-color);
 }
 
 a {
     text-decoration-style: dashed;
- }
+    color: var(--fg-color);
+}
 
 a:hover {
-    text-decoration-style:solid;
+    text-decoration-style: solid;
 }
 
-:root {
-    font-family: Bahnschrift, 'DIN Alternate', 'Franklin Gothic Medium', 'Nimbus Sans Narrow', sans-serif-condensed, sans-serif;
-    font-weight: normal;
-
-    /* Define our colors. */
-
-/* CSS HSL */
---bg-color: hsla(37, 40%, 90%, 1);
---pop-color: hsla(20, 62%, 47%, 1);
---fg-color: hsla(180, 85%, 7%, 1);
---midnight-green: hsla(182, 68%, 17%, 1);
---yellow-green: hsla(78, 70%, 46%, 1);
-
-/* 
-$alabaster: hsla(37, 40%, 90%, 1);
-    $dark-green: hsla(180, 100%, 7%, 1);
-    $midnight-green: hsla(182, 68%, 17%, 1);
-    $yellow-green: hsla(78, 70%, 46%, 1);
-    $persimmon: hsla(20, 85%, 48%, 1); 
-*/
-}
 
 /* A couple of classes for use in debugging */
 .debug1 {
@@ -75,18 +71,22 @@ $alabaster: hsla(37, 40%, 90%, 1);
 .hero__content {
     text-align: center;
     padding: 8em 8em;
+
     a {
         color: var(--bg-color);
     }
+
     h1 {
         margin: 0;
         font-size: 4rem;
         text-transform: uppercase;
     }
+
     p {
         margin: 0;
         font-size: 1.75rem;
     }
+
     h1+p {
         margin-top: 2em;
     }

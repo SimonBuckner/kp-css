@@ -7,6 +7,7 @@
     "liveServer.settings.mount": [
         ["/kp-css/css", "src/css"],
         ["/kp-css/favicon", "src/favicon"],
-        ["/kp-css/js", "src/js"]
+        ["/kp-css/js", "src/js"],
+        ["/kp-css/pages", "src/pages"]
     ]
 }
