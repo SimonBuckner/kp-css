@@ -3,7 +3,10 @@
         "Lambdatest"
     ],
     "liveServer.settings.port": 4000,
+    "liveServer.settings.root": "/src",
     "liveServer.settings.mount": [
-        ["/", "src"]
+        ["/kp-css/css", "src/css"],
+        ["/kp-css/favicon", "src/favicon"],
+        ["/kp-css/js", "src/js"]
     ]
 }
