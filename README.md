@@ -6,7 +6,7 @@ Consolidating my learning from Kevin Powell's excellent
 
 You can see the results [here](https://simonbuckner.github.io/kp-css/).
 
-Shout Outs
+Shout-Outs
 ----------
 
 Before getting into the content of the site, here are some shout-outs to people
