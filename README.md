@@ -4,7 +4,7 @@ kp-css
 Consolidating my learning from Kevin Powell's excellent 
 [Conquering Responsive Layouts course](https://courses.kevinpowell.co/conquering-responsive-layouts)
 
-You can see the results (here)[https://simonbuckner.github.io/kp-css/].
+You can see the results [here](https://simonbuckner.github.io/kp-css/).
 
 Shout Outs
 ----------
