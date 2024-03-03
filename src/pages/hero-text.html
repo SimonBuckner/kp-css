@@ -7,7 +7,7 @@
     <title>kp-css</title>
 
     <link href="/kp-css/css/style.css" rel="stylesheet" />
-    <link href="/kp-css/css/prism.css" rel="stylesheet" />
+    <link href="/kp-css/css/prism-tomorrow-night.css" rel="stylesheet" />
 
     <link rel="icon" type="image/png" sizes="192x192" href="/kp-css/favicon/android-icon-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/kp-css/favicon/favicon-32x32.png">
@@ -20,33 +20,87 @@
     <section class="hero">
         <div class="container">
             <div class="hero__content">
-                <h1>kp-css</h1>
-                <p>Consolidating my learning from Kevin Powell's excellent
-                    <a href="https://courses.kevinpowell.co/conquering-responsive-layouts">
-                        Conquering Responsive Layouts course</a>.
+                <h1>kp-css: Hero Text</h1>
+                <p>This comes from the idea of hero shots in the marketing world. It is a big and bold section on your
+                    landing page that gives a clear explanation for your site.
                 </p>
             </div>
         </div>
     </section>
 
-    <section class="code">
+    <section class="walk-thru">
         <div class="container">
-            <div class="code__content">
-                <pre><code class="language-html">
+            <div class="walk-thru__content">
+                <div>
+                    <h2>HTML Code</h2>
+                    <pre><code class="language-html">
 &lt;section class=&quot;hero&quot;&gt;
-    &lt;div class=&quot;content&quot;&gt;
-        &lt;h1&gt;kp-css&lt;/h1&gt;
-        &lt;p&gt;Consolidating my learning from Kevin Powell&#039;s excellent
-            &lt;a href=&quot;https://courses.kevinpowell.co/conquering-responsive-layouts&quot;&gt;
-                Conquering Responsive Layouts course&lt;/a&gt;.
-        &lt;/p&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;div class=&quot;hero__content&quot;&gt;
+            &lt;h1&gt;kp-css: Hero Text&lt;/h1&gt;
+            &lt;p&gt;This comes from the marketing world and hero shots. A visual representation of your offer that
+                demonstrates how your product or service actually works so your prospects can picture themselves
+                using it. The hero shot is generally a photo or a video and should clearly show benefits and 
+                context of use.&lt;a class=&quot;ref-link&quot; href=&quot;https://unbounce.com/conversion-glossary/definition/hero-shot/#:%7E:text=Definition,benefits%20and%20context%20of%20use&quot;&gt;source&lt;/a&gt;
+            &lt;/p&gt;
+        &lt;/div&gt;
     &lt;/div&gt;
 &lt;/section&gt;
-                </code></pre>
+                    </code></pre>
+                </div>
+                <div>
+                    <h2>CSS Code</h2>
+                    <pre><code class="language-css">
+.container {
+    width: min(80%, 1100px);
+    margin: 0 auto;
+}
+
+.hero {
+    background-color: var(--pop-color);
+    color: var(--bg-color);
+}
+
+.hero__content {
+    text-align: center;
+    padding: 8em 8em;
+
+    a {
+        color: var(--bg-color);
+    }
+
+    h1 {
+        margin: 0;
+        font-size: 4rem;
+        text-transform: uppercase;
+    }
+
+    p {
+        margin: 0;
+        font-size: 1.75rem;
+    }
+
+    h1+p {
+        margin-top: 2em;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero__content {
+        padding: 1em;
+    }
+}                        
+                    </code></pre>
+                </div>
             </div>
         </div>
     </section>
-    <script src="/kp-css/js/prism.js"></script>
+    <nav>
+        <div class="container">
+            <a href="/kp-css/index.html">Home</a>
+        </div>
+    </nav>
+    <script src="/kp-css/js/prism-tomorrow-night.js"></script>
 </body>
 
 </html>
