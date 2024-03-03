@@ -10,10 +10,10 @@ Shout Outs
 Before getting into the content of the site, here are some shout-outs to people
 and tools that help me out.
 
-    - [Kevin Powell](https://www.youtube.com/@KevinPowell) for his excellent YouTube channel
-    - [The Primeagen](https://www.youtube.com/c/theprimeagen) for his excellent YouTube channel
-    - [Prism](https://prismjs.com/) for their syntax highlighter
-    - [Lambdatest](https://www.lambdatest.com/free-online-tools/html-escape) for the HTML escape tool
+  - [Kevin Powell](https://www.youtube.com/@KevinPowell) for his excellent YouTube channel
+  - [The Primeagen](https://www.youtube.com/c/theprimeagen) for his excellent YouTube channel
+  - [Prism](https://prismjs.com/) for their syntax highlighter
+  - [Lambdatest](https://www.lambdatest.com/free-online-tools/html-escape) for the HTML escape tool
 
 Layout of the site
 ------------------
