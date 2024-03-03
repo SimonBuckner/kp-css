@@ -7,4 +7,5 @@ confirm:
 	@echo -n 'Are you sure? [y/N] ' && read ans && [ $${ans:-N} = y ]
 
 deploy:
+	git push origin main
 	git subtree push --prefix src origin gh-pages
