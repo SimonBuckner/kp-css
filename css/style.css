@@ -58,6 +58,10 @@ a:hover {
     margin: 1em 0;
 }
 
+.ref-link {
+    vertical-align: super;
+    font-size: .8rem;
+}
 .container {
     width: min(80%, 1100px);
     margin: 0 auto;
@@ -91,6 +95,7 @@ a:hover {
         margin-top: 2em;
     }
 }
+
 
 
 @media (max-width: 600px) {
