@@ -3,14 +3,11 @@
     font-weight: normal;
 
     /* Define our colors. */
-    --bg-color: hsla(37, 40%, 90%, 1);
-    --pop-color: hsla(20, 62%, 47%, 1);
-    --fg-color: hsla(180, 85%, 7%, 1);
-
-    /*  Not using these yet...
-    --midnight-green: hsla(182, 68%, 17%, 1);
-    --yellow-green: hsla(78, 70%, 46%, 1);
-    */ 
+    --color-bg: hsla(37, 25%, 95%, 1);
+    --color-fg: hsl(18, 18%, 18%);
+    --color-pop: hsl(20, 62%, 47%);
+    --color-ac1: hsl(19, 19%, 68%);
+    --color-ac2: hsl(126, 49%, 37%);
 }
 
 /* Basic CSS reset */
@@ -26,18 +23,18 @@ img {
 
 body {
     margin: 0;
-    color: var(--fg-color);
+    color: var(--color-fg);
+    background-color: var(--color-bg);
 }
 
 a {
     text-decoration-style: dashed;
-    color: var(--fg-color);
+    color: var(--color-fg);
 }
 
 a:hover {
     text-decoration-style: solid;
 }
-
 
 /* A couple of classes for use in debugging */
 .debug1 {
@@ -62,45 +59,8 @@ a:hover {
     vertical-align: super;
     font-size: .8rem;
 }
+
 .container {
     width: min(80%, 1100px);
     margin: 0 auto;
-}
-
-.hero {
-    background-color: var(--pop-color);
-    color: var(--bg-color);
-}
-
-.hero__content {
-    text-align: center;
-    padding: 8em 8em;
-
-    a {
-        color: var(--bg-color);
-    }
-
-    h1 {
-        margin: 0;
-        font-size: 4rem;
-        text-transform: uppercase;
-    }
-
-    p {
-        margin: 0;
-        font-size: 1.75rem;
-    }
-
-    h1+p {
-        margin-top: 2em;
-    }
-}
-
-
-
-@media (max-width: 600px) {
-    .hero__content {
-        padding: 1em;
-    }
-
 }

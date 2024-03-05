@@ -1,0 +1,19 @@
+.flex-cols {
+    padding: 2em 0;
+}
+
+.flex-cols__content {
+    display: flex;
+    gap: 1em;
+}
+
+.col {
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .flex-cols__content {
+        flex-direction: column;
+    }
+
+}

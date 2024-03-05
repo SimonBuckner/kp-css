@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kp-css</title>
+
+    <link href="/kp-css/css/style.css" rel="stylesheet" />
+    <link href="/kp-css/css/hero.css" rel="stylesheet" />
+    <link href="/kp-css/css/flex-columns.css" rel="stylesheet" />
+
+    <link href="/kp-css/css/prism-tomorrow-night.css" rel="stylesheet" />
+
+    <link rel="icon" type="image/png" sizes="192x192" href="/kp-css/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/kp-css/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/kp-css/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/kp-css/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/kp-css/favicon/manifest.json">
+</head>
+
+<body>
+    <section class="hero">
+        <div class="container">
+            <div class="hero__content">
+                <h1>kp-css: Flex Columns</h1>
+                <p>Arranging text is columns across the page using Flexbox.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="flex-cols">
+        <div class="container">
+            <!-- <h2>The Flex Columns</h2> -->
+            <div class="flex-cols__content">
+                <div class="col">
+                    <h3>Column 1</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse ex ab ipsam assumenda quasi 
+                        pariatur dolores deleniti odio eligendi rerum. Est quibusdam excepturi, maxime tempora dolorem 
+                        nam aperiam hic consectetur.
+                    </p>
+                </div>
+                <div class="col">
+                    <h3>Column 2</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse ex ab ipsam assumenda quasi 
+                        pariatur dolores deleniti odio eligendi rerum. Est quibusdam excepturi, maxime tempora dolorem 
+                        nam aperiam hic consectetur.
+                    </p>
+                </div>
+                <div class="col">
+                    <h3>Column 3</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse ex ab ipsam assumenda quasi 
+                        pariatur dolores deleniti odio eligendi rerum. Est quibusdam excepturi, maxime tempora dolorem 
+                        nam aperiam hic consectetur.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="walk-thru">
+        <div class="container">
+            <div class="walk-thru__content">
+                <div>
+                    <h2>HTML Code</h2>
+                    <pre><code class="language-html">
+&lt;section class=&quot;flex-cols&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;!-- &lt;h2&gt;The Flex Columns&lt;/h2&gt; --&gt;
+        &lt;div class=&quot;flex-cols__content&quot;&gt;
+            &lt;div class=&quot;col&quot;&gt;
+                &lt;h3&gt;Column 1&lt;/h3&gt;
+                &lt;p&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse ex ab ipsam assumenda quasi 
+                    pariatur dolores deleniti odio eligendi rerum. Est quibusdam excepturi, maxime tempora dolorem 
+                    nam aperiam hic consectetur.
+                &lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;col&quot;&gt;
+                &lt;h3&gt;Column 2&lt;/h3&gt;
+                &lt;p&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse ex ab ipsam assumenda quasi 
+                    pariatur dolores deleniti odio eligendi rerum. Est quibusdam excepturi, maxime tempora dolorem 
+                    nam aperiam hic consectetur.
+                &lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;col&quot;&gt;
+                &lt;h3&gt;Column 3&lt;/h3&gt;
+                &lt;p&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse ex ab ipsam assumenda quasi 
+                    pariatur dolores deleniti odio eligendi rerum. Est quibusdam excepturi, maxime tempora dolorem 
+                    nam aperiam hic consectetur.
+                &lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/section&gt;
+                    </code></pre>
+                </div>
+                <div>
+                    <h2>CSS Code</h2>
+                    <pre><code class="language-css">
+.container {
+    width: min(80%, 1100px);
+    margin: 0 auto;
+}
+
+.hero {
+    background-color: var(--pop-color);
+    color: var(--bg-color);
+}
+
+.hero__content {
+    text-align: center;
+    padding: 8em 8em;
+
+    a {
+        color: var(--bg-color);
+    }
+
+    h1 {
+        margin: 0;
+        font-size: 4rem;
+        text-transform: uppercase;
+    }
+
+    p {
+        margin: 0;
+        font-size: 1.75rem;
+    }
+
+    h1+p {
+        margin-top: 2em;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero__content {
+        padding: 1em;
+    }
+}                        
+                    </code></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+    <nav>
+        <div class="container">
+            <a href="/kp-css/index.html">Home</a>
+        </div>
+    </nav>
+    <script src="/kp-css/js/prism-tomorrow-night.js"></script>
+</body>
+
+</html>

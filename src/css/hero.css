@@ -1,0 +1,49 @@
+
+.hero {
+    background-color: var(--color-pop);
+    color: var(--color-bg);
+}
+
+.hero__content {
+    text-align: center;
+    padding: 6em 4em;
+
+    a {
+        color: var(--color-bg);
+    }
+
+    h1 {
+        margin: 0;
+        font-size: 4rem;
+        text-transform: uppercase;
+    }
+
+    p {
+        margin: 0;
+        font-size: 1.75rem;
+    }
+
+    h1+p {
+        margin-top: 2rem;
+    }
+}
+
+
+
+@media (max-width: 600px) {
+    .hero__content {
+        padding: 3em 2em;
+
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        p {
+            font-size: 1.5rem;
+        }
+
+        h1+p {
+            margin-top: 1rem;
+        }
+    }
+}
