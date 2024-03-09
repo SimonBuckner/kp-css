@@ -18,15 +18,18 @@
     <link rel="manifest" href="/kp-css/favicon/manifest.json">
     
     <script type="module">
-        import { loadNavbar, navPages } from "/kp-css/js/navbar.js";
-        loadNavbar("hero-text");
+        import { setActivePage } from "/kp-css/js/navbar.js";
+        setActivePage("hero-text");
     </script>
 </head>
 
 <body>
     <nav class="header">
-        <nav-bar><!-- custom component /js/navbar.js--></nav-bar>
+        <div class="container">
+            <nav-bar><!-- custom component /js/navbar.js--></nav-bar>
+        </div>
     </nav>
+    
     <section class="hero">
         <div class="container">
             <div class="hero__content">
