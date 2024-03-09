@@ -7,7 +7,7 @@
     <title>kp-css</title>
 
     <link href="/kp-css/css/style.css" rel="stylesheet" />
-    <link href="/kp-css/css/hero-text.css" rel="stylesheet" />
+    <link href="/kp-css/css/hero-image.css" rel="stylesheet" />
 
     <link href="/kp-css/css/prism-tomorrow-night.css" rel="stylesheet" />
 
@@ -19,21 +19,28 @@
     
     <script type="module">
         import { loadNavbar, navPages } from "/kp-css/js/navbar.js";
-        loadNavbar("hero-text");
+        loadNavbar("hero-image");
     </script>
 </head>
 
 <body>
     <nav class="header">
-        <nav-bar><!-- custom component /js/navbar.js--></nav-bar>
+        <div class="container">
+            <nav-bar><!-- custom component /js/navbar.js--></nav-bar>
+        </div>
     </nav>
+    
     <section class="hero">
         <div class="container">
-            <div class="hero__content">
-                <h1>kp-css: Hero Text</h1>
-                <p>This comes from the idea of hero shots in the marketing world. It is a big and bold section on your
-                    landing page that gives a clear explanation for your site.
-                </p>
+            <div class="hero__content flex-cols">
+                <div class="col">
+                    <h1>kp-css: Hero Image</h1>
+                    <p>This comes from the idea of hero shots in the marketing world. It is a big and bold section on
+                        your
+                        landing page that gives a clear explanation for your site.
+                    </p>
+                </div>
+                <img class="col" src="/kp-css/img/hero-image.jpg" alt="Glastonbury flags" />
             </div>
         </div>
     </section>
