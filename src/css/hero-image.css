@@ -6,7 +6,16 @@
 
 .hero__content {
     text-align: center;
-    padding: 6em 4em;
+    padding: 6em 2em;
+    display: flex;
+
+    .col {
+        width: 100%;
+    }
+
+    .col+.col {
+        margin-left: 10%;
+    }
 
     a {
         color: var(--color-bg);

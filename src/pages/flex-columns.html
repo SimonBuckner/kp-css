@@ -7,7 +7,7 @@
     <title>kp-css</title>
 
     <link href="/kp-css/css/style.css" rel="stylesheet" />
-    <link href="/kp-css/css/hero.css" rel="stylesheet" />
+    <link href="/kp-css/css/hero-text.css" rel="stylesheet" />
     <link href="/kp-css/css/flex-columns.css" rel="stylesheet" />
 
     <link href="/kp-css/css/prism-tomorrow-night.css" rel="stylesheet" />
@@ -17,9 +17,20 @@
     <link rel="icon" type="image/png" sizes="96x96" href="/kp-css/favicon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/kp-css/favicon/favicon-16x16.png">
     <link rel="manifest" href="/kp-css/favicon/manifest.json">
+
+    <script type="module">
+        import { loadNavbar, navPages } from "/kp-css/js/navbar.js";
+        loadNavbar("flex-columns");
+    </script>
 </head>
 
 <body>
+    <nav class="header">
+        <div class="container">
+            <nav-bar><!-- custom component /js/navbar.js--></nav-bar>
+        </div>
+    </nav>
+    
     <section class="hero">
         <div class="container">
             <div class="hero__content">

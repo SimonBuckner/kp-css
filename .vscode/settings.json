@@ -5,11 +5,12 @@
     "liveServer.settings.port": 4000,
     "liveServer.settings.root": "/src",
     "liveServer.settings.mount": [
+        ["/kp-css", "src/"],
+        ["/kp-css/pages", "src/pages"],
         ["/kp-css/css", "src/css"],
         ["/kp-css/favicon", "src/favicon"],
-        ["/kp-css/js", "src/js"],
-        ["/kp-css/pages", "src/pages"],
-        ["/kp-css", "src/"]
+        ["/kp-css/img", "src/img"],
+        ["/kp-css/js", "src/js"]
 
     ]
 }

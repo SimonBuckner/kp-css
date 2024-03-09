@@ -6,6 +6,14 @@ Consolidating my learning from Kevin Powell's excellent
 
 You can see the results [here](https://simonbuckner.github.io/kp-css/).
 
+My aim is to avoid using the following.
+
+- Pre-processors (other than ones I write myself)
+- Transpilers
+- JavaScript frameworks
+- Node and NPM and other JS ecosystems
+
+
 Shout-Outs
 ----------
 
@@ -17,6 +25,7 @@ and tools that help me out.
   - [Prism](https://prismjs.com/) for their syntax highlighter
   - [Lambdatest](https://www.lambdatest.com/free-online-tools/html-escape) for the HTML escape tool
   - [LogRocket](https://blog.logrocket.com/building-color-palette-css/) for the color system
+  - [freeCodeCamp](https://www.freecodecamp.org/news/reusable-html-components-how-to-reuse-a-header-and-footer-on-a-website/) HTML Components
 
 ### TODO
 Track down the favicon generator I used.

@@ -7,7 +7,7 @@
     <title>kp-css</title>
 
     <link href="/kp-css/css/style.css" rel="stylesheet" />
-    <link href="/kp-css/css/hero.css" rel="stylesheet" />
+    <link href="/kp-css/css/hero-text.css" rel="stylesheet" />
     <link href="/kp-css/css/prism-tomorrow-night.css" rel="stylesheet" />
 
     <link rel="icon" type="image/png" sizes="192x192" href="/kp-css/favicon/android-icon-192x192.png">
@@ -15,9 +15,20 @@
     <link rel="icon" type="image/png" sizes="96x96" href="/kp-css/favicon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/kp-css/favicon/favicon-16x16.png">
     <link rel="manifest" href="/kp-css/favicon/manifest.json">
+
+    <script type="module">
+        import { loadNavbar, navPages } from "/kp-css/js/navbar.js";
+        loadNavbar("hero-text");
+    </script>
 </head>
 
 <body>
+    <nav class="header">
+        <div class="container">
+            <nav-bar><!-- custom component /js/navbar.js--></nav-bar>
+        </div>
+    </nav>
+
     <section class="hero">
         <div class="container">
             <div class="hero__content">
@@ -42,19 +53,6 @@
                 <p>Don't expect any deep dive explanations. That may comes. For the meantime, this is more a list
                     of recipes I can drag and drop into projects.
                 </p>
-            </div>
-        </div>
-    </section>
-
-    <section class="nav">
-        <div class="container">
-            <div class="nav__content">
-                <h3>Site Index</h3>
-                <p>TODO: Make this prettier</p>
-                <ul>
-                    <li><a href="/kp-css/pages/hero-text.html">Hero Text</a></li>
-                    <li><a href="/kp-css/pages/flex-columns.html">Flex Columns</a></li>
-                </ul>
             </div>
         </div>
     </section>
