@@ -11,6 +11,5 @@
         ["/kp-css/favicon", "src/favicon"],
         ["/kp-css/img", "src/img"],
         ["/kp-css/js", "src/js"]
-
     ]
 }
