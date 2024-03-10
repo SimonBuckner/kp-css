@@ -12,17 +12,17 @@ class Navbar extends HTMLElement {
     }
     
     connectedCallback() {
-
+        
+        let content = '<nav class="nav"><ul>\n';
         let links = [];
         navPages.forEach((item) => {
-            let link = `<li><a href="\\${item[0]}.html" id="navbar__${item[2]}">${item[1]}</a></li>`;
+            let link = `<li id="nav__${item[2]}"><a href="\\${item[0]}.html">${item[1]}</a></li>`;
             links.push(link);
         });
 
-        let content = '<ul>\n';
         
         content = content.concat(links.join('\n'));
-        content = content.concat('</ul>', '\n');
+        content = content.concat('</navbar></ul>', '\n');
         
         this.innerHTML = content;
     }
@@ -32,9 +32,9 @@ customElements.define('nav-bar', Navbar);
 
 function setActivePage(pageName) {
     
-    let item = document.getElementById('navbar__' + pageName);
+    let item = document.getElementById('nav__' + pageName);
     if (item != null) {
-        item.setAttribute('class', 'navbar__item--active');
+        item.setAttribute('class', 'nav__item--active');
     }
 }
 
