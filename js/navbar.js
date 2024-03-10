@@ -1,8 +1,11 @@
+
+const prefix = '/kp-css';
+
 const navPages = [
-    ['index', 'Home', 'home'],
-    ['pages/hero-text', 'Hero Text', 'hero-text'],
-    ['pages/flex-columns', 'Flex Columns', 'flex-columns'],
-    ['pages/hero-image', 'Hero Image', 'hero-image'],
+    ['/index', 'Home', 'home'],
+    ['/pages/hero-text', 'Hero Text', 'hero-text'],
+    ['/pages/flex-columns', 'Flex Columns', 'flex-columns'],
+    ['/pages/hero-image', 'Hero Image', 'hero-image'],
 ];
 
 
@@ -16,7 +19,7 @@ class Navbar extends HTMLElement {
         let content = '<nav class="nav"><ul>\n';
         let links = [];
         navPages.forEach((item) => {
-            let link = `<li id="nav__${item[2]}"><a href="\\${item[0]}.html">${item[1]}</a></li>`;
+            let link = `<li id="nav__${item[2]}"><a href="${prefix}${item[0]}.html">${item[1]}</a></li>`;
             links.push(link);
         });
 
