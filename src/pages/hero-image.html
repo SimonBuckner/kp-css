@@ -30,10 +30,18 @@
     <section class="hero">
         <div class="page-margin">
             <h1 class="hero__title">kp-css: Hero Image</h1>
-            <div class="hero__content flex">
-                <p>This comes from the idea of hero shots in the marketing world. It is a big and bold section on
-                    your landing page that gives a clear explanation for your site.</p>
-                <img src="/kp-css/img/hero-image.jpg" alt="Glastonbury flags" />
+            <div class="hero__content">
+                <div class="hero--2col">
+                    <div class="col col-left">
+                        <p class="col">This comes from the idea of hero shots in the marketing world. It is a big and
+                            bold
+                            section on
+                            your landing page that gives a clear explanation for your site.</p>
+                    </div>
+                    <div class="col col-right">
+                        <img class="col" src="/kp-css/img/hero-image.jpg" alt="Glastonbury flags" />
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -43,20 +51,26 @@
             <div class="walk-thru__content">
                 <div>
                     <h2>HTML Code</h2>
-                    <pre><code class="language-html">
-&lt;section class=&quot;hero&quot;&gt;
-    &lt;div class=&quot;container&quot;&gt;
+                    <pre>
+<code class="language-html">&lt;section class=&quot;hero&quot;&gt;
+    &lt;div class=&quot;page-margin&quot;&gt;
+        &lt;h1 class=&quot;hero__title&quot;&gt;kp-css: Hero Image&lt;/h1&gt;
         &lt;div class=&quot;hero__content&quot;&gt;
-            &lt;h1&gt;kp-css: Hero Text&lt;/h1&gt;
-            &lt;p&gt;This comes from the marketing world and hero shots. A visual representation of your offer that
-                demonstrates how your product or service actually works so your prospects can picture themselves
-                using it. The hero shot is generally a photo or a video and should clearly show benefits and 
-                context of use.&lt;a class=&quot;ref-link&quot; href=&quot;https://unbounce.com/conversion-glossary/definition/hero-shot/#:%7E:text=Definition,benefits%20and%20context%20of%20use&quot;&gt;source&lt;/a&gt;
-            &lt;/p&gt;
+            &lt;div class=&quot;hero--2col&quot;&gt;
+                &lt;div class=&quot;col col-left&quot;&gt;
+                    &lt;p class=&quot;col&quot;&gt;This comes from the idea of hero shots in the marketing world. It is a big and
+                        bold
+                        section on
+                        your landing page that gives a clear explanation for your site.&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;col col-right&quot;&gt;
+                    &lt;img class=&quot;col&quot; src=&quot;/kp-css/img/hero-image.jpg&quot; alt=&quot;Glastonbury flags&quot; /&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
-&lt;/section&gt;
-                    </code></pre>
+&lt;/section&gt;</code>
+                    </pre>
                 </div>
                 <div>
                     <h2>CSS Code</h2>

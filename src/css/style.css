@@ -34,7 +34,8 @@ body {
 }
 
 h1,
-h2 {
+h2, 
+pre {
     margin: 0;
 }
 
@@ -59,13 +60,19 @@ a:hover {
     color: var(--color-fg-2);
 }
 
+.code-10 {
+    font-size: .8rem !important;
+    margin: 0 !important;
+    /* line-height: .5 !important; */
+    margin-bottom: 2em !important;
+}
 .align-centre {
     width: 100%;
     text-align: center;
 }
 
 .page-margin {
-    width: min(80%, 1100px);
+    width: min(80%, 784px);
     margin: 0 auto;
 }
 
@@ -101,4 +108,27 @@ a:hover {
 
 .flex {
     display: flex;
+}
+
+@media (min-width: 600px) {
+    .hero--2col {
+        display: flex;
+        gap: 2em;
+        
+        .col-left {
+            width: 60%;
+            align-self: center;
+        }
+        .col-right {
+            padding: 2em 0;
+            width: 40%;
+        }
+    }
+}
+
+@media (min-width: 700px) {
+    .flex-cols__content {
+        display: flex;
+        gap: 2em;
+    }
 }
