@@ -5,34 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>kp-css</title>
-
-    <link href="/kp-css/css/style.css" rel="stylesheet" />
-    <link href="/kp-css/css/hero-text.css" rel="stylesheet" />
-    <link href="/kp-css/css/prism-tomorrow-night.css" rel="stylesheet" />
-
     <link rel="icon" type="image/png" sizes="192x192" href="/kp-css/favicon/android-icon-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/kp-css/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="/kp-css/favicon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/kp-css/favicon/favicon-16x16.png">
     <link rel="manifest" href="/kp-css/favicon/manifest.json">
 
-    <script type="module">
-        import { setActivePage } from "/kp-css/js/navbar.js";
-        setActivePage("home");
-    </script>
+    <link href="/kp-css/css/style.css" rel="stylesheet" />
 </head>
 
 <body>
-    <section class="header">
-        <div class="container">
-            <nav-bar><!-- custom component /js/navbar.js--></nav-bar>
-        </div>
-    </section>
-
     <section class="hero">
-        <div class="container">
+        <div class="page-margin">
+            <h1 class="hero__title">kp-css</h1>
             <div class="hero__content">
-                <h1>kp-css</h1>
                 <p>Consolidating my learning from Kevin Powell's excellent
                     <a href="https://courses.kevinpowell.co/conquering-responsive-layouts">Conquering Responsive Layouts
                         course</a>.
@@ -42,17 +28,23 @@
     </section>
 
     <section class="intro">
-        <div class="container">
+        <div class="page-margin">
             <div class="intro__content">
-                <h2>What is this for?</h2>
-                <p>The purpose of this site is to reinforce what I have learned from Kevin's excellent course and
-                    to provide me with reference implementations I can use future projects. I am a hobby programmer
-                    and so I don't use a lot of this on a day to day basis and consequently, the information can
-                    kind of slip away.
+                <h2>Why is this here?</h2>
+                <p> This iste serves the dual purposes of allowing me to reinforce the skills leanred from the excellent
+                    <a href="https://courses.kevinpowell.co/conquering-responsive-layouts">Conquering Responsive
+                        Layouts course</a> from Kevin Powell. The secondary purpose is to act as a reference
+                    implementation I can then
+                    use in future personal projects.
                 </p>
-                <p>Don't expect any deep dive explanations. That may comes. For the meantime, this is more a list
-                    of recipes I can drag and drop into projects.
+                <p> To that end, don't expect any deep dive explanations here. Just a bunch of HTML and CSS to copy
+                    and paste. If you find any of it useful, then please be my guest to use.</p>
+                <p>However, if you think this site is 🐎💩, then feel free to move along. There is nothing for you here.
                 </p>
+                <p>So, lets get started with the example.</p>
+                <div class="align-centre call-to-action">
+                    <a href="/kp-css/pages/hero-text.html" class="btn align-centre">Hero Text</a>
+                </div>
             </div>
         </div>
     </section>

@@ -5,18 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>kp-css</title>
-
-    <link href="/kp-css/css/style.css" rel="stylesheet" />
-    <link href="/kp-css/css/hero-image.css" rel="stylesheet" />
-
-    <link href="/kp-css/css/prism-tomorrow-night.css" rel="stylesheet" />
-
     <link rel="icon" type="image/png" sizes="192x192" href="/kp-css/favicon/android-icon-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/kp-css/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="/kp-css/favicon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/kp-css/favicon/favicon-16x16.png">
     <link rel="manifest" href="/kp-css/favicon/manifest.json">
-    
+
+    <link href="/kp-css/css/style.css" rel="stylesheet" />
+    <link href="/kp-css/css/prism-tomorrow-night.css" rel="stylesheet" />
+
     <script type="module">
         import { setActivePage } from "/kp-css/js/navbar.js";
         setActivePage("hero-image");
@@ -24,29 +21,25 @@
 </head>
 
 <body>
-    <section class="header">
-        <div class="container">
-            <nav-bar><!-- custom component /js/navbar.js--></nav-bar>
-        </div>
-    </section>
+    <!-- <section class="header"> -->
+    <!-- <div class="page-margin"> -->
+    <!-- <nav-bar class="topnav"></nav-bar> -->
+    <!-- </div> -->
+    <!-- </section> -->
 
     <section class="hero">
-        <div class="container">
-            <div class="hero__content flex-cols">
-                <div class="col">
-                    <h1>kp-css: Hero Image</h1>
-                    <p>This comes from the idea of hero shots in the marketing world. It is a big and bold section on
-                        your
-                        landing page that gives a clear explanation for your site.
-                    </p>
-                </div>
-                <img class="col" src="/kp-css/img/hero-image.jpg" alt="Glastonbury flags" />
+        <div class="page-margin">
+            <h1 class="hero__title">kp-css: Hero Image</h1>
+            <div class="hero__content flex">
+                <p>This comes from the idea of hero shots in the marketing world. It is a big and bold section on
+                    your landing page that gives a clear explanation for your site.</p>
+                <img src="/kp-css/img/hero-image.jpg" alt="Glastonbury flags" />
             </div>
         </div>
     </section>
 
     <section class="walk-thru">
-        <div class="container">
+        <div class="page-margin">
             <div class="walk-thru__content">
                 <div>
                     <h2>HTML Code</h2>
@@ -124,11 +117,7 @@
             </div>
         </div>
     </section>
-    <nav>
-        <div class="container">
-            <a href="/kp-css/index.html">Home</a>
-        </div>
-    </nav>
+
     <script src="/kp-css/js/prism-tomorrow-night.js"></script>
 </body>
 

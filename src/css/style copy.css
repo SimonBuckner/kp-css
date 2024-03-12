@@ -1,0 +1,104 @@
+:root {
+    font-family: Bahnschrift, 'DIN Alternate', 'Franklin Gothic Medium', 'Nimbus Sans Narrow', sans-serif-condensed, sans-serif;
+    font-weight: normal;
+
+    /* Define our colors. */
+    --color-bg: hsla(37, 25%, 95%, 1);
+    --color-fg: hsl(18, 18%, 18%);
+    --color-pop: hsl(20, 62%, 47%);
+    --color-ac1: hsl(19, 19%, 68%);
+    --color-ac2: hsl(126, 49%, 37%);
+}
+
+/* Basic CSS reset */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    margin: 0;
+    color: var(--color-fg);
+    background-color: var(--color-bg);
+}
+
+a {
+    text-decoration-style: dashed;
+    color: var(--color-fg);
+}
+
+a:hover {
+    text-decoration-style: solid;
+}
+
+/* A couple of classes for use in debugging */
+.debug1 {
+    border: 3px solid darkred;
+}
+
+.debug2 {
+    border: 2px solid red;
+}
+
+.debug3 {
+    border: 1px solid lightcoral;
+}
+
+/* The meat and bones */
+
+.separator {
+    margin: 1em 0;
+}
+
+.ref-link {
+    vertical-align: super;
+    font-size: .8rem;
+}
+
+.container {
+    width: min(80%, 1100px);
+    margin: 0 auto;
+}
+
+
+/* Navbar */
+.header {
+    background-color: var(--color-pop);
+}
+
+.nav {
+    color: var(--color-bg);
+
+    ul {
+        display: flex;
+        justify-content: flex-end;
+        margin: 0;
+    }
+
+    ul li:first-child {
+        flex-grow: 1;
+    }
+
+    li {
+        list-style: none;
+        padding: .75em;
+    }
+
+    a {
+        text-decoration: none;
+        font-size: 1.25rem;
+        color: var(--color-bg);
+    }
+
+    .nav__item--active {
+        a {
+            color: var(--color-ac1);
+        }
+        
+    }
+}

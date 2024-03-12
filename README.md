@@ -54,3 +54,6 @@ these elements are used for the following purposes.
     - Control the arrangement of child content
         - E.g., Enable flexbox or flexgrid on the child items
 
+## TODO
+
+Rework the css using lessons from this video
